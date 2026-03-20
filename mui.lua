@@ -124,13 +124,14 @@ initList[1] = {
 			Parent = player.PlayerGui,
 			Name = 'MarlyUI',
 			ClipToDeviceSafeArea = false,
-			ScreenInsets = Enum.ScreenInsets.None
+			ScreenInsets = Enum.ScreenInsets.None,
+			ResetOnSpawn = false,
 		})
 		local background = Utility.createInstance('Frame',{
 			Parent = uiContainer,
 			Name = 'background',
-			Size = UDim2.new(.6,0,.6,0),
-			Position = UDim2.new(.5,0,.5,0),
+			Size = UDim2.new(.45,0,.45,0),
+			Position = UDim2.new(.85,0,.5,0),
 			AnchorPoint = Vector2.new(.5,.5),
 			BorderSizePixel = 3,
 			ClipsDescendants = true,
